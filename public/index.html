@@ -178,6 +178,28 @@
             </div>
           </div>
 
+          <tr>
+              <td>อำเภอ : </td>
+              <td><select id="province">
+                  <option>- กรุณาเลือกจังหวัด -</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td>จังหวัด : </td>
+              <td><select id="amphur">
+                  <option>- กรุณาเลือกอำเภอ -</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td>ตำบล : </td>
+              <td><select id="district">
+                  <option>- กรุณาเลือกตำบล -</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td>รหัสไปรษณีย์ : </td>
+              <td><input id="postcode"/></td>
+            </tr>
 
 
           <div class="mb-3">
@@ -315,5 +337,22 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
-
+  <script src="script/amphures.json"></script>
+  <script src="script/districts.json"></script>
+  <script src="script/geography.json"></script>
+  <script src="script/provinces.json"></script>
+  <script src="script/zipcodes.json"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="AutoProvince.js"></script>
+<script>
+	 $('body').AutoProvince({
+            PROVINCE:'#province', //  select สำหรับรายชื่อจังหวัด
+            AMPHUR:'#amphur', //  select สำหรับรายชื่ออำเภอ
+            DISTRICT:'#district', //  select สำหรับรายชื่อตำบล
+            POSTCODE:'#postcode', //  input field สำหรับรายชื่อรหัสไปรษณีย์
+            GEOGRAPHY:'#geography', // input field แสดงภาค
+            arrangeByName:false // กำหนดให้เรียงตามตัวอักษร ลำดับจังหวัด
+        });
+    
+</script>
 </html>
