@@ -52,27 +52,27 @@
           </div>
 
           <div>
-            <div>ด้วยผู้ขับขี่ <br>Driver of: </div>
+            <div> ด้วยผู้ขับขี่ <br>Driver of: </div>
             <div class="form-row mb-3">
               <div class=" col-md-3 form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cartype1" value="option1"
                   required>
-                <label class="form-check-label" for="inlineRadio1">รถจักรยานยนต์</label>
+                <label class="form-check-label" for="cartype1">รถจักรยานยนต์</label>
               </div>
               <div class="col-md-3 form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cartype2" value="option2"
                   required>
-                <label class="form-check-label" for="inlineRadio2">รถยนต์นั่งส่วนบุคคล</label>
+                <label class="form-check-label" for="cartype2">รถยนต์นั่งส่วนบุคคล</label>
               </div>
               <div class="col-md-3 form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cartype3" value="option3"
                   required>
-                <label class="form-check-label" for="inlineRadio3">รถประเภทอื่น</label>
+                <label class="form-check-label" for="cartype3">รถประเภทอื่น</label>
               </div>
               <div class="col-md-2 form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="cartype4" value="option4"
                   required>
-                <label class="form-check-label" for="inlineRadio4">รถขนส่ง</label>
+                <label class="form-check-label" for="cartype4">รถขนส่ง</label>
               </div>
             </div>
           </div>
@@ -171,44 +171,198 @@
                   <option value="อุทัยธานี">อุทัยธานี </option>
                   <option value="อุบลราชธานี">อุบลราชธานี</option>
                   <option value="อ่างทอง">อ่างทอง </option>
-                  <option value="อื่นๆ">อื่นๆ</option>
                 </select>
                 </select>
               </div>
             </div>
           </div>
 
-          <tr>
-              <td>อำเภอ : </td>
-              <td><select id="province">
-                  <option>- กรุณาเลือกจังหวัด -</option>
-                </select></td>
-            </tr>
-            <tr>
-              <td>จังหวัด : </td>
-              <td><select id="amphur">
-                  <option>- กรุณาเลือกอำเภอ -</option>
-                </select></td>
-            </tr>
-            <tr>
-              <td>ตำบล : </td>
-              <td><select id="district">
-                  <option>- กรุณาเลือกตำบล -</option>
-                </select></td>
-            </tr>
-            <tr>
-              <td>รหัสไปรษณีย์ : </td>
-              <td><input id="postcode"/></td>
-            </tr>
-
-
           <div class="mb-3">
-            <label for="email">Email <span class="text-muted">(Optional)</span></label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-            <div class="invalid-feedback">
-              Please enter a valid email address for shipping updates.
+            <label>หมายเลขทะเบียนรถ <br>License plate number:</label>
+            <input class="form-control" id="plate_number" placeholder="กก00000" required>
+          </div>
+
+          <div>
+            <div>ป้ายทะเบียนสี <br>Plate Color: </div>
+            <div class="form-row mb-3">
+              <div class=" col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="plateColor1" value="option1"
+                  required>
+                <label class="form-check-label" for="plateColor1">ขาว</label>
+              </div>
+              <div class="col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="plateColor2" value="option2"
+                  required>
+                <label class="form-check-label" for="plateColor2">เหลือง</label>
+              </div>
+              <div class="col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="plateColor3" value="option3"
+                  required>
+                <label class="form-check-label" for="plateColor3">เขียว</label>
+              </div>
+              <div class="col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="plateColor4" value="option4"
+                  required>
+                <label class="form-check-label" for="plateColor4">แดง</label>
+              </div>
+              <div class="col-md-1 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="plateColor5" value="option5"
+                  required>
+                <label class="form-check-label" for="plateColor6">ฟ้า</label>
+              </div>
+              <div class="col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="plateColor6" value="option6"
+                  required>
+                <label class="form-check-label" for="plateColor6">อื่นๆ</label>
+                <input class="form-control" id="plate_color">
+              </div>
             </div>
           </div>
+
+          <div>
+            กระทำผิดฐาน:
+            
+            <div class="form-row mb-3">
+              <div class="col-md-1 form-check form-check-inline">1.ขับรถ</div>
+
+              <div class="col">
+                <div class="col-md-4 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge1">
+                  <label class="form-check-label" for="charge1">
+                    ฝ่าฝืนสัญญาณไฟจราจรสีแดง
+                  </label></div>
+                <div class="col-md-3 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge2">
+                  <label class="form-check-label" for="charge2">
+                    ฝ่าฝืนเครื่องหมายบนพื้นทาง
+                  </label></div>
+                <div class="col-md-4 form-check form-check-inline ">
+                  <input class="form-check-input" type="checkbox" value="" id="charge3">
+                  <label class="form-check-label" for="charge3">ฝ่าฝืนเครื่องหมายจราจรห้าม</label>
+                  <input class="form-control" id="charge3">
+                </div>
+                <div class="col-md-4 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge4">
+                  <label class="form-check-label" for="charge4">
+                    ในลักษณะกีดขวางการจราจร
+                  </label></div>
+                <div class="col-md-3 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge5">
+                  <label class="form-check-label" for="charge5">
+                    ไม่ใกล้ขอบทางเดินรถด้านซ้าย
+                  </label></div>
+                <div class="col-md-4 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge6">
+                  <label class="form-check-label" for="charge6">
+                    แซงเมื่อเข้าที่คับขัน
+                  </label></div>
+
+              </div>
+
+            </div>
+
+            <div class="form-row mb-3">
+              <div class="col-md-1 form-check form-check-inline">2.หยุดรถ</div>
+
+              <div class="col">
+                <div class="col-md-4 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge7">
+                  <label class="form-check-label" for="charge7">
+                    ในลักษณะกีดขวางการจราจร
+                  </label></div>
+                <div class="col-md-3 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge8">
+                  <label class="form-check-label" for="charge8">
+                    ในเขตห้ามหยุด
+                  </label></div>
+                <div class="col-md-4 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge9">
+                  <label class="form-check-label" for="charge9">
+                    รอสัญญาณล้ำแนว
+                  </label></div>
+
+                </div>
+            </div>
+
+
+            <div class="form-row mb-3">
+              <div class="col-md-1 form-check form-check-inline">3.จอดรถไว้</div>
+
+              <div class="col">
+                <div class="col-md-4 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge10">
+                  <label class="form-check-label" for="charge10">
+                    ในลักษณะกีดขวางการจราจร
+                  </label></div>
+                <div class="col-md-3 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge11">
+                  <label class="form-check-label" for="charge11">
+                    บนทางเท้า
+                  </label></div>
+                <div class="col-md-4 form-check form-check-inline ">
+                  <input class="form-check-input" type="checkbox" value="" id="charge12">
+                  <label class="form-check-label" for="charge12">ในเขตห้ามจอด</label>
+                  <input class="form-control" id="charge3">
+                </div>
+                <div class="col-md-4 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge13">
+                  <label class="form-check-label" for="charge13">
+                    ไม่ชิดขอบทางด้านซ้าย
+                  </label></div>
+                <div class="col-md-3 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge14">
+                  <label class="form-check-label" for="charge14">
+                    ไม่ขนานชิดขอบทาง
+                  </label></div>
+                <div class="col-md-4 form-check form-check-inline">
+                  <input class="form-check-input form-check-inline" type="checkbox" value="" id="charge15">
+                  <label class="form-check-label" for="charge15">
+                    ซ้อนคัน
+                  </label></div>
+
+              </div>
+
+            </div>
+            <div class="form-row mb-3">
+              <div class="col-auto form-check form-check-inline">4.อื่นๆ     <input class="form-control" id="charge16"></div>
+
+            </div>
+
+           
+
+
+          </div>
+
+
+
+
+
+
+          <tr>
+            <td>จังหวัด : </td>
+            <td><select id="province">
+                <option>- กรุณาเลือกจังหวัด -</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>อำเภอ : </td>
+            <td><select id="amphur">
+                <option>- กรุณาเลือกอำเภอ -</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>ตำบล : </td>
+            <td><select id="district">
+                <option>- กรุณาเลือกตำบล -</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>รหัสไปรษณีย์ : </td>
+            <td><input id="postcode" /></td>
+          </tr>
+
+
+
 
           <div class="mb-3">
             <label for="address">Address</label>
@@ -343,16 +497,16 @@
   <script src="script/provinces.json"></script>
   <script src="script/zipcodes.json"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="AutoProvince.js"></script>
-<script>
-	 $('body').AutoProvince({
-            PROVINCE:'#province', //  select สำหรับรายชื่อจังหวัด
-            AMPHUR:'#amphur', //  select สำหรับรายชื่ออำเภอ
-            DISTRICT:'#district', //  select สำหรับรายชื่อตำบล
-            POSTCODE:'#postcode', //  input field สำหรับรายชื่อรหัสไปรษณีย์
-            GEOGRAPHY:'#geography', // input field แสดงภาค
-            arrangeByName:false // กำหนดให้เรียงตามตัวอักษร ลำดับจังหวัด
-        });
-    
-</script>
+  <script type="text/javascript" src="AutoProvince.js"></script>
+  <script>
+    $('body').AutoProvince({
+      PROVINCE: '#province', //  select สำหรับรายชื่อจังหวัด
+      AMPHUR: '#amphur', //  select สำหรับรายชื่ออำเภอ
+      DISTRICT: '#district', //  select สำหรับรายชื่อตำบล
+      POSTCODE: '#postcode', //  input field สำหรับรายชื่อรหัสไปรษณีย์
+      GEOGRAPHY: '#geography', // input field แสดงภาค
+      arrangeByName: false // กำหนดให้เรียงตามตัวอักษร ลำดับจังหวัด
+    });
+  </script>
+
 </html>
