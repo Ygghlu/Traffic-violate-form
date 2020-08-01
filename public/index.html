@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Jekyll v4.0.1">
+  <meta name="description" content="ใบสั่งจราจร">
   <title>ฟอร์มใบสั่ง</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
@@ -15,6 +13,7 @@
   <link href="stylesheet/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -172,7 +171,6 @@
                   <option value="อุบลราชธานี">อุบลราชธานี</option>
                   <option value="อ่างทอง">อ่างทอง </option>
                 </select>
-                </select>
               </div>
             </div>
           </div>
@@ -210,7 +208,7 @@
                   required>
                 <label class="form-check-label" for="plateColor6">ฟ้า</label>
               </div>
-              <div class="col-md-2 form-check form-check-inline">
+              <div class="col-md-2 form-check form-check-inline mb-3">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="plateColor6" value="option6"
                   required>
                 <label class="form-check-label" for="plateColor6">อื่นๆ</label>
@@ -219,10 +217,10 @@
             </div>
           </div>
 
-          <div>
+          <div class="mb-3">
             กระทำผิดฐาน:
-            
-            <div class="form-row mb-3">
+
+            <div class="form-row ">
               <div class="col-md-1 form-check form-check-inline">1.ขับรถ</div>
 
               <div class="col">
@@ -281,7 +279,7 @@
                     รอสัญญาณล้ำแนว
                   </label></div>
 
-                </div>
+              </div>
             </div>
 
 
@@ -324,164 +322,349 @@
 
             </div>
             <div class="form-row mb-3">
-              <div class="col-auto form-check form-check-inline">4.อื่นๆ     <input class="form-control" id="charge16"></div>
+              <div class="col-auto form-check form-check-inline">4.อื่นๆ <input class="form-control" id="charge16">
+              </div>
 
             </div>
-
-           
-
-
           </div>
 
+          <div class="mb-3">เหตุเกิดที่ </div>
 
+          <div class="row ">
 
-
-
-
-          <tr>
-            <td>จังหวัด : </td>
-            <td><select id="province">
-                <option>- กรุณาเลือกจังหวัด -</option>
-              </select></td>
-          </tr>
-          <tr>
-            <td>อำเภอ : </td>
-            <td><select id="amphur">
-                <option>- กรุณาเลือกอำเภอ -</option>
-              </select></td>
-          </tr>
-          <tr>
-            <td>ตำบล : </td>
-            <td><select id="district">
+            <div class="col-md-4  form-group"><label for="soi">ตรอก/ซอย </label>
+              <input type="text" class="form-control form-inline" id="soi" required></div>
+            <div class="col-md-4  form-group"><label for="road">ถนน <br> </label>
+              <input type="text" class="form-control " id="road" required></div>
+            <div class="col-md-4  form-group">
+              <label for="district">ตำบล/แขวง</label>
+              <select class="form-control" id="district" required>
                 <option>- กรุณาเลือกตำบล -</option>
-              </select></td>
-          </tr>
-          <tr>
-            <td>รหัสไปรษณีย์ : </td>
-            <td><input id="postcode" /></td>
-          </tr>
-
-
-
-
-          <div class="mb-3">
-            <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-            <div class="invalid-feedback">
-              Please enter your shipping address.
+              </select>
             </div>
-          </div>
-
-          <div class="mb-3">
-            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
           </div>
 
           <div class="row">
-            <div class="col-md-5 mb-3">
-              <label for="country">Country</label>
-              <select class="custom-select d-block w-100" id="country" required>
-                <option value="">Choose...</option>
-                <option>United States</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div>
             <div class="col-md-4 mb-3">
-              <label for="state">State</label>
-              <select class="custom-select d-block w-100" id="state" required>
-                <option value="">Choose...</option>
-                <option>California</option>
+              <label for="amphur">อำเภอ/เขต</label>
+              <select class="form-control" id="amphur" required>
+                <option>- กรุณาเลือกอำเภอ -</option>
               </select>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
             </div>
-            <div class="col-md-3 mb-3">
-              <label for="zip">Zip</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
-              <div class="invalid-feedback">
-                Zip code required.
-              </div>
+            <div class="col-md-4  mb-3">
+              <label for="province">จังหวัด</label>
+              <select class="form-control" id="province" required>
+                <option>- กรุณาเลือกจังหวัด -</option>
+              </select>
             </div>
           </div>
-          <hr class="mb-4">
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="same-address">
-            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing
-              address</label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="save-info">
-            <label class="custom-control-label" for="save-info">Save this information for next time</label>
-          </div>
-          <hr class="mb-4">
 
-          <h4 class="mb-3">Payment</h4>
+          <div class="row">
+            <div class="mb-3 col-md-4">
+              <label for="time">เมื่อวันที่ </label>
+              <input type="datetime-local" class="form-control " id="time" required>
 
-          <div class="d-block my-3">
-            <div class="custom-control custom-radio">
-              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-              <label class="custom-control-label" for="credit">Credit card</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-              <label class="custom-control-label" for="debit">Debit card</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-              <label class="custom-control-label" for="paypal">PayPal</label>
+
             </div>
           </div>
+
+          <div class="mb-3">
+            <div class="">อาศัยอำนาจตามความในมาดรา ๑๔๐ วรรคหนึ่ง แห่ง พ.ร.บ.จราจรทางบก พ.ศ. ๒๕๒๒ ซึ่งแก้ไขเพิ่มเติมโดย
+              พ.ร.บ.จราจรทางบก (ฉบับที่ ๙) พ.ศ. ๒๕๕๗ และมาดรา ๑๔๑ แห่ง พ.ร.บ.จราจรทางบก พ.ศ. ๒๕๒๒ ซึ่งแก้ไขเพิ่มเติมโดย
+              พ.ร.บ.จราจรทางบก (ฉบับที่ ๑๑) พ.ศ. ๒๕๕๙ ให้ผู้ขับขี่
+            </div>
+            <div class="form-row">
+              <div class="col-auto"> หรือเจ้าของรถหรือผู้ครอบครองรถ
+                ไปชำระค่าปรับดามขัอกำหนดสำนักงานตำรวจแห่งชาติจำนวนเงิน</div>
+              <div class="col-auto"><input type="text" class="form-control form-inline col-auto" id="fine" required>
+              </div>
+              <div class="col-auto">
+                บาท
+              </div>
+            </div>
+          </div>
+          <div class="form-row mb-3">
+            <div class="col-auto"> ต่อพนักงานสอบสวน ณ สถานีตำรวจ</div>
+            <div class="col-auto"> <input type="text" class="form-control form-inline " id="policestation1" required>
+            </div>
+            <div class="col-auto"> หรือ</div>
+            <div class="col-auto mb-3"> <input type="text" class="form-control form-inline " id="policestation2"
+                required></div>
+            <div class="col-auto ">หรือชำระด้วยวิธีอี่นใดดามที่ระบุไว้ด้านหลังใบสั่งนี้
+              <u><b>ภายใน ๗ วันนับแต่วันที่ได้รับใบสั่ง</b> </u> </div>
+          </div>
+
+          <div class="col-auto form-check form-check-inline mb-3">
+            <input class="form-check-input" type="checkbox" id="sendbymail" value="mailtooffender">
+            <label class="form-check-label"
+              for="sendbymail">ส่งทางไปรษณีย์พร้อมพยานหลักฐานและให้เจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตามที่ระบุไว้ข้างต้นภายในสามสิบวันนับแต่วันที่ได้รับใบสั่ง</label>
+          </div>
+
+          <div class="mb-1">ลงชื่อผู้ออกใบสั่ง:..................................................................</div>
+          <div class="form-row mb-2">
+            <div class="col-1">ยศ</div>
+            <div class="col-2"><input type="text" class="form-control form-inline " id="rank" required> </div>
+            <div class="col-1">ชื่อ</div>
+            <div class="col-3"><input type="text" class="form-control form-inline " id="officername" required> </div>
+            <div class="col-1">ชื่อสกุล</div>
+            <div class="col-3"><input type="text" class="form-control form-inline " id="officerlastname" required>
+            </div>
+          </div>
+
+          <div class="form-row mb-3">
+            <div class=" col-3 form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="offdeptOptions" id="offDept1" value="trafficOff"
+                required>
+              <label class="form-check-label" for="offDept1">เจ้าพนักงานจราจร</label>
+            </div>
+
+            <div class="form-row ">
+              <div class="col-auto form-check form-check-inline"><input class="form-check-input " type="radio"
+                  name="offdeptOptions" id="officerdept2" value="compOfficer" required>
+                <label class="form-check-label form-inline" for="officerdept2">พนักงานเจ้าหน้าที่ รหัส</label>
+              </div>
+              <div class="col-auto"><input type="text" class="form-control form-inline " id="officercode"> </div>
+            </div>
+          </div>
+
+          <hr class="mb-3">
+
+          <div class="py-5 text-center">
+            <h3>ใบรับแทนใบอนุญาติขับขี่</h3>
+            <p class="lead">Substitute of the driver's license</p>
+          </div>
+
           <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="cc-name">Name on card</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required>
-              <small class="text-muted">Full name as displayed on card</small>
-              <div class="invalid-feedback">
-                Name on card is required
-              </div>
+            <div class="col-6">
+              ชื่อผู้ขับขี่
+              <input type="text" id="drivername" class="form-control">
             </div>
-            <div class="col-md-6 mb-3">
-              <label for="cc-number">Credit card number</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
-                Credit card number is required
+            <div class="col-6">
+              เลขประจำตัวประชาชน
+              <input type="text" id="citizenID" class="form-control">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-6">
+              ใบอนุญาตขับขี่เลขที่/ฉบับที่
+              <input type="text" id="licenseNum" class="form-control">
+            </div>
+            <div class="col-6">
+              วันอนุญาต
+              <input type="date" id="issueDate" class="form-control">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-3">ออกให้โดยนายทะเบียน</div>
+
+            <div class="col-4 form-inline"><label for="issprovince">จังหวัด</label>
+              <select class="form-control" required>
+                <option value="">กรุณาเลือกจังหวัด</option>
+                <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                <option value="กระบี่">กระบี่ </option>
+                <option value="กาญจนบุรี">กาญจนบุรี </option>
+                <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                <option value="กำแพงเพชร">กำแพงเพชร </option>
+                <option value="ขอนแก่น">ขอนแก่น</option>
+                <option value="จันทบุรี">จันทบุรี</option>
+                <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                <option value="ชัยนาท">ชัยนาท </option>
+                <option value="ชัยภูมิ">ชัยภูมิ </option>
+                <option value="ชุมพร">ชุมพร </option>
+                <option value="ชลบุรี">ชลบุรี </option>
+                <option value="เชียงใหม่">เชียงใหม่ </option>
+                <option value="เชียงราย">เชียงราย </option>
+                <option value="ตรัง">ตรัง </option>
+                <option value="ตราด">ตราด </option>
+                <option value="ตาก">ตาก </option>
+                <option value="นครนายก">นครนายก </option>
+                <option value="นครปฐม">นครปฐม </option>
+                <option value="นครพนม">นครพนม </option>
+                <option value="นครราชสีมา">นครราชสีมา </option>
+                <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                <option value="นครสวรรค์">นครสวรรค์ </option>
+                <option value="นราธิวาส">นราธิวาส </option>
+                <option value="น่าน">น่าน </option>
+                <option value="นนทบุรี">นนทบุรี </option>
+                <option value="บึงกาฬ">บึงกาฬ</option>
+                <option value="บุรีรัมย์">บุรีรัมย์</option>
+                <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                <option value="ปทุมธานี">ปทุมธานี </option>
+                <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                <option value="ปัตตานี">ปัตตานี </option>
+                <option value="พะเยา">พะเยา </option>
+                <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                <option value="พังงา">พังงา </option>
+                <option value="พิจิตร">พิจิตร </option>
+                <option value="พิษณุโลก">พิษณุโลก </option>
+                <option value="เพชรบุรี">เพชรบุรี </option>
+                <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                <option value="แพร่">แพร่ </option>
+                <option value="พัทลุง">พัทลุง </option>
+                <option value="ภูเก็ต">ภูเก็ต </option>
+                <option value="มหาสารคาม">มหาสารคาม </option>
+                <option value="มุกดาหาร">มุกดาหาร </option>
+                <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                <option value="ยโสธร">ยโสธร </option>
+                <option value="ยะลา">ยะลา </option>
+                <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                <option value="ระนอง">ระนอง </option>
+                <option value="ระยอง">ระยอง </option>
+                <option value="ราชบุรี">ราชบุรี</option>
+                <option value="ลพบุรี">ลพบุรี </option>
+                <option value="ลำปาง">ลำปาง </option>
+                <option value="ลำพูน">ลำพูน </option>
+                <option value="เลย">เลย </option>
+                <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                <option value="สกลนคร">สกลนคร</option>
+                <option value="สงขลา">สงขลา </option>
+                <option value="สมุทรสาคร">สมุทรสาคร </option>
+                <option value="สมุทรปราการ">สมุทรปราการ </option>
+                <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                <option value="สระแก้ว">สระแก้ว </option>
+                <option value="สระบุรี">สระบุรี </option>
+                <option value="สิงห์บุรี">สิงห์บุรี </option>
+                <option value="สุโขทัย">สุโขทัย </option>
+                <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                <option value="สุรินทร์">สุรินทร์ </option>
+                <option value="สตูล">สตูล </option>
+                <option value="หนองคาย">หนองคาย </option>
+                <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                <option value="อุดรธานี">อุดรธานี </option>
+                <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                <option value="อุทัยธานี">อุทัยธานี </option>
+                <option value="อุบลราชธานี">อุบลราชธานี</option>
+                <option value="อ่างทอง">อ่างทอง </option>
+              </select> </div>
+
+            <div class="col-4 form-inline">
+              <label for="branch">สาขา</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div>
+            <div> ใบขับขี่: </div>
+            <div class="form-row mb-3">
+              <div class=" col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dCartype1" value="option1"
+                  required>
+                <label class="form-check-label" for="dCartype1">รถจักรยานยนต์</label>
+              </div>
+              <div class="col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dcartype2" value="option2"
+                  required>
+                <label class="form-check-label" for="dcartype2">รถยนต์สามล้อ</label>
+              </div>
+              <div class="col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dcartype3" value="option3"
+                  required>
+                <label class="form-check-label" for="dcartype3">รถยนต์</label>
+              </div>
+              <div class="col-md-2 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dcartype4" value="option4"
+                  required>
+                <label class="form-check-label" for="dcartype4">รถขนส่ง</label>
+              </div>
+              <div class="col-md-3 form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="dcartype4" value="option4"
+                  required>
+                <label class="form-check-label col-auto" for="dcartype4">รถอื่นๆ</label>
+                <input type="text" id="dcartype" class="form-control col-auto" required>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3 mb-3">
-              <label for="cc-expiration">Expiration</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-              <div class="invalid-feedback">
-                Expiration date required
+          <div>
+            <div> ชนิด: </div>
+            <div class="form-row mb-3">
+              <div class=" col-auto form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="licenseType1" value="option1"
+                  required>
+                <label class="form-check-label" for="licenseType1">ชั่วคราว</label>
               </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="cc-cvv">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-              <div class="invalid-feedback">
-                Security code required
+              <div class="col-auto form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="licenseType2" value="option2"
+                  required>
+                <label class="form-check-label" for="licenseType2">ตลอดชีพ</label>
+              </div>
+              <div class="col-auto form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="licenseType3" value="option3"
+                  required>
+                <label class="form-check-label" for="licenseType3">สาธารณะ</label>
+              </div>
+              <div class="col-auto form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="licenseType4" value="option4"
+                  required>
+                <label class="form-check-label" for="licenseType4">บุคคล ชนิดที่</label>
+
+              </div>
+              <div class="col-auto form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="licenseType4" value="option4"
+                  required>
+                <label class="form-check-label col-auto" for="licenseType4">ทุกประเภทชนิดที่</label>
+
+              </div>
+              <div class="col-auto form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="licenseType5" value="option5"
+                  required>
+                <label class="form-check-label col-auto" for="licenseType5">ระหว่างประเทศ</label>
               </div>
             </div>
           </div>
-          <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-        </form>
+
+          <div class="mb-3">
+            ข้าพเจ้าผู้ออกใบสั่งฉบับนี้ได้เรียกเก็บใบอนุญาติขับขี่ไว้ และให้ใช้เป็นใบแทนใบอนุญาตขับขี่ได้เป็นการชั่วคราว
+            ไม่เกิน๗วัน นับแต่วันที่ออกใบรับแทนใบอนุญาติขับขี่นี้
+          </div>
+
+
+          <div class="form-row mb-1 ">
+            <div class="col-8">
+              ลงชื่อ:..............................................................................ผู้ออกใบสั่ง</div>
+            <div class="col-4 form-inline">รหัส: <input class="form-control" type="text" name="officerID"
+                id="officerID"></div>
+
+
+
+
+
+          </div>
+
+          <div class="form-row mb-3">
+            <div class="col-1">ยศ</div>
+            <div class="col-2"><input type="text" class="form-control form-inline " id="rank" required> </div>
+            <div class="col-1">ชื่อ</div>
+            <div class="col-3"><input type="text" class="form-control form-inline " id="officername" required> </div>
+            <div class="col-1">ชื่อสกุล</div>
+            <div class="col-3"><input type="text" class="form-control form-inline " id="officerlastname" required>
+            </div>
+          </div>
+
       </div>
     </div>
-
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-      <p class="mb-1">&copy; 2017-2020 Company Name</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Privacy</a></li>
-        <li class="list-inline-item"><a href="#">Terms</a></li>
-        <li class="list-inline-item"><a href="#">Support</a></li>
-      </ul>
-    </footer>
   </div>
+
+
+
+
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <div class="row">
+      <div class="col-2">ทจ.๒-ต.๗๕๔/๗</div>
+      <div class="col-6"></div>
+      <div class="col-4">(๗-๘๗๗๘๗-๖๗๕๗-๗๕๗๘๒ ล.โรงพิมพ์ตำรวจ ก.ค.๒๕๖๐๗)</div>
+    </div>
+
+
+  </footer>
+
+  </div>
+
+
+
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
@@ -491,22 +674,22 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
-  <script src="script/amphures.json"></script>
-  <script src="script/districts.json"></script>
-  <script src="script/geography.json"></script>
-  <script src="script/provinces.json"></script>
-  <script src="script/zipcodes.json"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="AutoProvince.js"></script>
+
+  <script type="text/javascript" src="script/AutoProvince.js"></script>
   <script>
     $('body').AutoProvince({
-      PROVINCE: '#province', //  select สำหรับรายชื่อจังหวัด
-      AMPHUR: '#amphur', //  select สำหรับรายชื่ออำเภอ
-      DISTRICT: '#district', //  select สำหรับรายชื่อตำบล
-      POSTCODE: '#postcode', //  input field สำหรับรายชื่อรหัสไปรษณีย์
-      GEOGRAPHY: '#geography', // input field แสดงภาค
-      arrangeByName: false // กำหนดให้เรียงตามตัวอักษร ลำดับจังหวัด
+      PROVINCE: '#province', // select div สำหรับรายชื่อจังหวัด
+      AMPHUR: '#amphur', // select div สำหรับรายชื่ออำเภอ
+      DISTRICT: '#district', // select div สำหรับรายชื่อตำบล
+      arrangeByName: true // กำหนดให้เรียงตามตัวอักษร
     });
   </script>
+
+
+
+
+</body>
 
 </html>
